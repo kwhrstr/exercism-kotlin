@@ -1,0 +1,3 @@
+# Project exclude paths
+/raindrops/.gradle/
+/raindrops/build/
