@@ -11,7 +11,7 @@ object Raindrops {
         if (n % 7 == 0) {
             ans += "Plong"
         }
-        if (ans.isEmpty()){
+        if (ans == ""){
             ans = n.toString()
         }
         return ans
