@@ -12,6 +12,12 @@ object Raindrops {
             ans += "Plong"
         }
         if (ans == ""){
+            /* Int -> Stringへ変換
+            * プログラミング言語は数値123
+            * と文字列"123"で別物
+            * golangではやり方が違うので調べること
+            * 検索例: go int string
+            */
             ans = n.toString()
         }
         return ans
