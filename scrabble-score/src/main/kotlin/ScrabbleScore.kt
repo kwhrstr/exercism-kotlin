@@ -35,7 +35,7 @@ object ScrabbleScore {
         if ("QZ".contains(c)) {
             return 10
         }
-        return 9
+        return 0
     }
 
     fun scoreWord(word: String): Int {
@@ -45,12 +45,12 @@ object ScrabbleScore {
         * go for loop stringとかで調べてね
         * 文字列をloopならmaze-goでも使ってるから参考にしてね
         * */
-        for (c in word) {
+        for (c in word.toUpperCase()) {
             /*
             * 文字列を大文字に変換している
             * これはgo string toUpperとかで調べてね
             * */
-            ans += scoreLetter(c.toUpperCase())
+            ans += scoreLetter(c)
         }
         return ans
     }
